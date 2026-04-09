@@ -30,10 +30,12 @@ const VideoCard = ({ titleKey, descKey, video, index }: { titleKey: string; desc
   );
 };
 
+const base = import.meta.env.BASE_URL;
+
 const features = [
-  { titleKey: "features.pvp.title", descKey: "features.pvp.desc", video: "/videos/new-assets.mp4" },
-  { titleKey: "features.dungeon.title", descKey: "features.dungeon.desc", video: "/videos/new-engine.mp4" },
-  { titleKey: "features.classes.title", descKey: "features.classes.desc", video: "/videos/from-scratch.mp4" },
+  { titleKey: "features.pvp.title", descKey: "features.pvp.desc", video: `${base}videos/new-assets.mp4` },
+  { titleKey: "features.dungeon.title", descKey: "features.dungeon.desc", video: `${base}videos/new-engine.mp4` },
+  { titleKey: "features.classes.title", descKey: "features.classes.desc", video: `${base}videos/from-scratch.mp4` },
 ];
 
 const FeaturesSection = () => {
